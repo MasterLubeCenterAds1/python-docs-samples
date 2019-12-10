@@ -39,9 +39,7 @@ def deactivate_key(access_id, project_id):
     print("Updated At: {}".format(hmac_key.updated))
     print("Etag: {}".format(hmac_key.etag))
     return hmac_key
-
-
 # [END storage_deactivate_hmac_key]
 
 if __name__ == "__main__":
-    activate_key(access_id=sys.argv[1], project_id=sys.argv[2])
+    deactivate_key(access_id=sys.argv[1], project_id=sys.argv[2])
